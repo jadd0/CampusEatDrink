@@ -75,13 +75,23 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @objc func startUserTracking() {
         startTrackingTheUser = true
     }
-
     
-
-
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard let annotation = view.annotation,
+              let venues = globalFoodData?.food_venues,
+              let selectedVenue = venues.first(where: { $0.name == annotation.title }) else {
+            return
+        }
+        // Safely perform segue or handle venue selection
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        campusMap.delegate = self
+
         
         locationManager.delegate = self as CLLocationManagerDelegate
         
@@ -100,35 +110,94 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         
         if let url = URL(string: "https://cgi.csc.liv.ac.uk/~phil/Teaching/COMP228/eating_venues/data.json") {
-                let session = URLSession.shared
-                session.dataTask(with: url) { (data, response, err) in
-                    guard let jsonData = data else {
-                        print("No data received")
-                        return
+            let session = URLSession.shared
+            session.dataTask(with: url) { (data, response, err) in
+                guard let jsonData = data else {
+                    print("No data received")
+                    return
+                }
+                do {
+                    let decoder = JSONDecoder()
+                    globalFoodData = try decoder.decode(FoodData.self, from: jsonData)
+                    
+                    // Dispatch to main queue to add map annotations
+                    DispatchQueue.main.async {
+                        self.addVenuePinsToMap()
                     }
-                    do {
-                        let decoder = JSONDecoder()
-                        // Parse the JSON and assign it to the global variable
-                        globalFoodData = try decoder.decode(FoodData.self, from: jsonData)
-                        
-                        // Dispatch to main queue to update UI if needed
-                        DispatchQueue.main.async {
-                            // You can add any UI updates or further processing here
-                            print("Venues loaded successfully")
-                            
-                            // Example of accessing the parsed data
-                            if let venues = globalFoodData?.food_venues {
-                                print("Total venues: \(venues.count)")
-                                for venue in venues {
-                                    print("Venue: \(venue.name), Building: \(venue.building)")
-                                }
-                            }
-                        }
-                    } catch let jsonErr {
-                        print("Error decoding JSON", jsonErr)
-                    }
-                }.resume()
-            }
+                } catch let jsonErr {
+                    print("Error decoding JSON", jsonErr)
+                }
+            }.resume()
+        }
+    }
+    
+    func addVenuePinsToMap() {
+        // Ensure we have food data
+        guard let venues = globalFoodData?.food_venues else { return }
         
+        // Iterate through venues and create annotations
+        for venue in venues {
+            // Convert lat and lon to Double
+            guard let latitude = Double(venue.lat),
+                  let longitude = Double(venue.lon) else {
+                continue
+            }
+            
+            // Create annotation
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+            annotation.title = venue.name
+            annotation.subtitle = venue.building
+            
+            // Add annotation to map
+            campusMap.addAnnotation(annotation)
+        }
+    }
+    
+    // Make the annotation pretty and functional
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        // Skip user location annotation
+        guard !(annotation is MKUserLocation) else { return nil }
+        
+        let identifier = "VenueAnnotation"
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+        
+        if annotationView == nil {
+            annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView?.canShowCallout = true
+            
+            // Detail disclosure button
+            let detailButton = UIButton(type: .detailDisclosure)
+            annotationView?.rightCalloutAccessoryView = detailButton
+        } else {
+            annotationView?.annotation = annotation
+        }
+        
+        return annotationView
+    }
+    
+    // Handle annotation callout tap
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
+        // Find the selected venue
+        guard let annotation = view.annotation,
+              let venues = globalFoodData?.food_venues,
+              let selectedVenue = venues.first(where: { $0.name == annotation.title })
+        else {
+            return
+        }
+        
+        // Perform segue to venue details
+        performSegue(withIdentifier: "ShowVenue", sender: selectedVenue)
+    }
+    
+    // Update prepare method to handle venue from map
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowVenue" {
+            if let destinationVC = segue.destination as? VenueViewController,
+               let venue = sender as? Venue_Info {
+                destinationVC.selectedVenue = venue
+            }
+        }
     }
 }
