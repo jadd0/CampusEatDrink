@@ -55,37 +55,24 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         startTrackingTheUser = true
     }
     
-    //MARK: Table related stuff
-    @IBOutlet weak var theTable: UITableView!
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 10
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
-    var content = UIListContentConfiguration.subtitleCell()
-    content.text = "testing"
-    content.secondaryText = "more testing"
-    cell.contentConfiguration = content
-    return cell
-    }
-    // MARK: View related Stuff
+
+    
     override func viewDidLoad() {
-    super.viewDidLoad()
-    // Make this view controller a delegate of the Location Manager, so that it
-    //is able to call functions provided in this view controller.
-    locationManager.delegate = self as CLLocationManagerDelegate
-    //set the level of accuracy for the user's location.
-    locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-    //Ask the location manager to request authorisation from the user. Note that this
-    //only happens once if the user selects the "when in use" option. If the user
-    //denies access, then your app will not be provided with details of the user's
-    //location.
-    locationManager.requestWhenInUseAuthorization()
-    //Once the user's location is being provided then ask for updates when the user
-    //moves around.
-    locationManager.startUpdatingLocation()
-    //configure the map to show the user's location (with a blue dot).
-    myMap.showsUserLocation = true
+        super.viewDidLoad()
+        
+        locationManager.delegate = self as CLLocationManagerDelegate
+        
+        // Set the level of accuracy for the user's location
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        
+        // Ask the location manager to request authorisation from the user. Note that this only happens once if the user selects the "when in use" option. If the user denies access, then your app will not be provided with details of the user's location
+        locationManager.requestWhenInUseAuthorization()
+        
+        // Once the user's location is being provided then ask for updates when the user moves around
+        locationManager.startUpdatingLocation()
+        
+        // Configure the map to show the user's location (with a blue dot)
+        campusMap.showsUserLocation = true
     }
 }
