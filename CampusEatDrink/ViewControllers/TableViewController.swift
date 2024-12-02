@@ -17,11 +17,14 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "locationsTableCell", for: indexPath)
         var content = UIListContentConfiguration.subtitleCell()
-        content.text = "testing"
-        content.secondaryText = "more testing"
+
+        content.text = globalFoodData?.food_venues[indexPath.row].name
+        content.secondaryText = globalFoodData?.food_venues[indexPath.row].building
+        
         cell.contentConfiguration = content
         return cell
     }
+
     
     
     override func viewDidLoad() {
