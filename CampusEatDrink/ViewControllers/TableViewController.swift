@@ -11,11 +11,11 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var locationsTable: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
+        return globalFoodData?.food_venues.count ?? 0
+    } // TODO: fall back on core data
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "locationsTableCell", for: indexPath)
         var content = UIListContentConfiguration.subtitleCell()
         content.text = "testing"
         content.secondaryText = "more testing"

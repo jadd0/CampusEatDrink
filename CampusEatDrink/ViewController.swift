@@ -9,6 +9,26 @@ import UIKit
 import MapKit
 import CoreLocation
 
+struct FoodData: Codable {
+    var food_venues : [ Venue_Info ]
+    let last_modified : String
+}
+
+struct Venue_Info: Codable {
+    let name: String
+    let building: String
+    let lat: String
+    let lon: String
+    let description: String
+    let opening_times: [String]
+    let amenities: [String]?
+    let photos: [String]?
+    let URL: URL?
+    let last_modified: String
+}
+
+var globalFoodData: FoodData?
+// TODO: make this save to core data for future
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     @IBOutlet weak var campusMap: MKMapView!
@@ -55,6 +75,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @objc func startUserTracking() {
         startTrackingTheUser = true
     }
+
     
 
 
@@ -75,5 +96,39 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         // Configure the map to show the user's location (with a blue dot)
         campusMap.showsUserLocation = true
+        
+        
+        
+        if let url = URL(string: "https://cgi.csc.liv.ac.uk/~phil/Teaching/COMP228/eating_venues/data.json") {
+                let session = URLSession.shared
+                session.dataTask(with: url) { (data, response, err) in
+                    guard let jsonData = data else {
+                        print("No data received")
+                        return
+                    }
+                    do {
+                        let decoder = JSONDecoder()
+                        // Parse the JSON and assign it to the global variable
+                        globalFoodData = try decoder.decode(FoodData.self, from: jsonData)
+                        
+                        // Dispatch to main queue to update UI if needed
+                        DispatchQueue.main.async {
+                            // You can add any UI updates or further processing here
+                            print("Venues loaded successfully")
+                            
+                            // Example of accessing the parsed data
+                            if let venues = globalFoodData?.food_venues {
+                                print("Total venues: \(venues.count)")
+                                for venue in venues {
+                                    print("Venue: \(venue.name), Building: \(venue.building)")
+                                }
+                            }
+                        }
+                    } catch let jsonErr {
+                        print("Error decoding JSON", jsonErr)
+                    }
+                }.resume()
+            }
+        
     }
 }
