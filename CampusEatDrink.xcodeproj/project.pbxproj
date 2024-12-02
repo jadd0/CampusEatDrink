@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		B4CAAFEA2CFDE0B40049766F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4CAAFC82CFDE0A80049766F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4CAAFCF2CFDE0A80049766F;
+			remoteInfo = CampusEatDrink;
+		};
+		B4CAAFF42CFDE0B40049766F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4CAAFC82CFDE0A80049766F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4CAAFCF2CFDE0A80049766F;
+			remoteInfo = CampusEatDrink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4CAAFD02CFDE0A80049766F /* CampusEatDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusEatDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CAAFE92CFDE0B40049766F /* CampusEatDrinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusEatDrinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CAAFF32CFDE0B40049766F /* CampusEatDrinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusEatDrinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B4CAAFFB2CFDE0B40049766F /* Exceptions for "CampusEatDrink" folder in "CampusEatDrink" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B4CAAFCF2CFDE0A80049766F /* CampusEatDrink */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B4CAAFD22CFDE0A80049766F /* CampusEatDrink */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B4CAAFFB2CFDE0B40049766F /* Exceptions for "CampusEatDrink" folder in "CampusEatDrink" target */,
+			);
+			path = CampusEatDrink;
+			sourceTree = "<group>";
+		};
+		B4CAAFEC2CFDE0B40049766F /* CampusEatDrinkTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CampusEatDrinkTests;
+			sourceTree = "<group>";
+		};
+		B4CAAFF62CFDE0B40049766F /* CampusEatDrinkUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CampusEatDrinkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4CAAFCD2CFDE0A80049766F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CAAFE62CFDE0B40049766F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CAAFF02CFDE0B40049766F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4CAAFC72CFDE0A80049766F = {
+			isa = PBXGroup;
+			children = (
+				B4CAAFD22CFDE0A80049766F /* CampusEatDrink */,
+				B4CAAFEC2CFDE0B40049766F /* CampusEatDrinkTests */,
+				B4CAAFF62CFDE0B40049766F /* CampusEatDrinkUITests */,
+				B4CAAFD12CFDE0A80049766F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4CAAFD12CFDE0A80049766F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4CAAFD02CFDE0A80049766F /* CampusEatDrink.app */,
+				B4CAAFE92CFDE0B40049766F /* CampusEatDrinkTests.xctest */,
+				B4CAAFF32CFDE0B40049766F /* CampusEatDrinkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4CAAFCF2CFDE0A80049766F /* CampusEatDrink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4CAAFFC2CFDE0B40049766F /* Build configuration list for PBXNativeTarget "CampusEatDrink" */;
+			buildPhases = (
+				B4CAAFCC2CFDE0A80049766F /* Sources */,
+				B4CAAFCD2CFDE0A80049766F /* Frameworks */,
+				B4CAAFCE2CFDE0A80049766F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B4CAAFD22CFDE0A80049766F /* CampusEatDrink */,
+			);
+			name = CampusEatDrink;
+			packageProductDependencies = (
+			);
+			productName = CampusEatDrink;
+			productReference = B4CAAFD02CFDE0A80049766F /* CampusEatDrink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4CAAFE82CFDE0B40049766F /* CampusEatDrinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4CAB0012CFDE0B40049766F /* Build configuration list for PBXNativeTarget "CampusEatDrinkTests" */;
+			buildPhases = (
+				B4CAAFE52CFDE0B40049766F /* Sources */,
+				B4CAAFE62CFDE0B40049766F /* Frameworks */,
+				B4CAAFE72CFDE0B40049766F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4CAAFEB2CFDE0B40049766F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B4CAAFEC2CFDE0B40049766F /* CampusEatDrinkTests */,
+			);
+			name = CampusEatDrinkTests;
+			packageProductDependencies = (
+			);
+			productName = CampusEatDrinkTests;
+			productReference = B4CAAFE92CFDE0B40049766F /* CampusEatDrinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B4CAAFF22CFDE0B40049766F /* CampusEatDrinkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4CAB0042CFDE0B40049766F /* Build configuration list for PBXNativeTarget "CampusEatDrinkUITests" */;
+			buildPhases = (
+				B4CAAFEF2CFDE0B40049766F /* Sources */,
+				B4CAAFF02CFDE0B40049766F /* Frameworks */,
+				B4CAAFF12CFDE0B40049766F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4CAAFF52CFDE0B40049766F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B4CAAFF62CFDE0B40049766F /* CampusEatDrinkUITests */,
+			);
+			name = CampusEatDrinkUITests;
+			packageProductDependencies = (
+			);
+			productName = CampusEatDrinkUITests;
+			productReference = B4CAAFF32CFDE0B40049766F /* CampusEatDrinkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4CAAFC82CFDE0A80049766F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					B4CAAFCF2CFDE0A80049766F = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					B4CAAFE82CFDE0B40049766F = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = B4CAAFCF2CFDE0A80049766F;
+					};
+					B4CAAFF22CFDE0B40049766F = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = B4CAAFCF2CFDE0A80049766F;
+					};
+				};
+			};
+			buildConfigurationList = B4CAAFCB2CFDE0A80049766F /* Build configuration list for PBXProject "CampusEatDrink" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4CAAFC72CFDE0A80049766F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B4CAAFD12CFDE0A80049766F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4CAAFCF2CFDE0A80049766F /* CampusEatDrink */,
+				B4CAAFE82CFDE0B40049766F /* CampusEatDrinkTests */,
+				B4CAAFF22CFDE0B40049766F /* CampusEatDrinkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4CAAFCE2CFDE0A80049766F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CAAFE72CFDE0B40049766F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CAAFF12CFDE0B40049766F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4CAAFCC2CFDE0A80049766F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CAAFE52CFDE0B40049766F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CAAFEF2CFDE0B40049766F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4CAAFEB2CFDE0B40049766F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4CAAFCF2CFDE0A80049766F /* CampusEatDrink */;
+			targetProxy = B4CAAFEA2CFDE0B40049766F /* PBXContainerItemProxy */;
+		};
+		B4CAAFF52CFDE0B40049766F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4CAAFCF2CFDE0A80049766F /* CampusEatDrink */;
+			targetProxy = B4CAAFF42CFDE0B40049766F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B4CAAFFD2CFDE0B40049766F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CampusEatDrink/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jadd.CampusEatDrink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4CAAFFE2CFDE0B40049766F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CampusEatDrink/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jadd.CampusEatDrink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B4CAAFFF2CFDE0B40049766F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4CAB0002CFDE0B40049766F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4CAB0022CFDE0B40049766F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jadd.CampusEatDrinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampusEatDrink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CampusEatDrink";
+			};
+			name = Debug;
+		};
+		B4CAB0032CFDE0B40049766F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jadd.CampusEatDrinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampusEatDrink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CampusEatDrink";
+			};
+			name = Release;
+		};
+		B4CAB0052CFDE0B40049766F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jadd.CampusEatDrinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CampusEatDrink;
+			};
+			name = Debug;
+		};
+		B4CAB0062CFDE0B40049766F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jadd.CampusEatDrinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CampusEatDrink;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4CAAFCB2CFDE0A80049766F /* Build configuration list for PBXProject "CampusEatDrink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CAAFFF2CFDE0B40049766F /* Debug */,
+				B4CAB0002CFDE0B40049766F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4CAAFFC2CFDE0B40049766F /* Build configuration list for PBXNativeTarget "CampusEatDrink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CAAFFD2CFDE0B40049766F /* Debug */,
+				B4CAAFFE2CFDE0B40049766F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4CAB0012CFDE0B40049766F /* Build configuration list for PBXNativeTarget "CampusEatDrinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CAB0022CFDE0B40049766F /* Debug */,
+				B4CAB0032CFDE0B40049766F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4CAB0042CFDE0B40049766F /* Build configuration list for PBXNativeTarget "CampusEatDrinkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CAB0052CFDE0B40049766F /* Debug */,
+				B4CAB0062CFDE0B40049766F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4CAAFC82CFDE0A80049766F /* Project object */;
+}
