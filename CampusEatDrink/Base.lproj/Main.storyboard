@@ -66,6 +66,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Mvf-dH-50q" kind="show" identifier="ShowVenue" id="nS6-u0-epD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -85,14 +88,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PyM-cy-HgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080.1526717557251" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1066" y="-27"/>
         </scene>
         <!--Venue View Controller-->
         <scene sceneID="sE0-XV-Rex">
             <objects>
                 <viewController id="Mvf-dH-50q" customClass="VenueViewController" customModule="CampusEatDrink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sd9-Gp-Hln">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Venue Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpE-bS-AhB">
@@ -113,6 +116,7 @@
                         <viewLayoutGuide key="safeArea" id="c6E-kI-gJJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dTA-YP-Jzw"/>
                     <connections>
                         <outlet property="venueDescription" destination="VSQ-pd-r6y" id="nXF-pn-L7a"/>
                         <outlet property="venueTitle" destination="TpE-bS-AhB" id="5Ek-jT-p4N"/>

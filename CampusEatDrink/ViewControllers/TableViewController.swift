@@ -27,12 +27,12 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Perform the segue when a cell is selected
-        performSegue(withIdentifier: "ShowVenueDetail", sender: self)
+        performSegue(withIdentifier: "ShowVenue", sender: self)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Check the segue identifier
-        if segue.identifier == "ShowVenueDetail" {
+        if segue.identifier == "ShowVenue" {
             // Get the selected row
             if let indexPath = locationsTable.indexPathForSelectedRow {
                 // Get the destination view controller
