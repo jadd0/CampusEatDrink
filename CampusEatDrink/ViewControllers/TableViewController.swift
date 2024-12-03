@@ -58,8 +58,11 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "locationsTableCell", for: indexPath)
         var content = UIListContentConfiguration.subtitleCell()
-
+        
         let venue = sortedVenues[indexPath.row]
+        
+        print(venue)
+        
         content.text = venue.name
         content.secondaryText = venue.building
         
